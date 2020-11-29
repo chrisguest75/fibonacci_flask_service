@@ -1,0 +1,37 @@
+swagger: "2.0"
+info:
+  description: "Test swagger service"
+  version: "1.0.0"
+  title: Swagger REST Article
+
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/api"
+
+# Paths supported by the server application
+paths:
+  /fibonacci:
+    get:
+      operationId: "fibonacci.generate"
+      parameters:
+        - name: terms
+          description: Number of terms to generate.
+          in: query
+          type: "integer"
+          required: true      
+      tags:
+        - "numbers"
+      summary: ""
+      description: "Generate a list of fibonacci numbers"
+      responses:
+        200:
+          description: "Successful generation of fibonacci numbers"
+          schema:
+            type: "array"
+            items:
+              properties:
+                number:
+                  type: "integer"
