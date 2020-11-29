@@ -28,3 +28,9 @@ https://help.parsehub.com/hc/en-us/articles/217751808-API-Tutorial-How-to-get-ru
 
 https://joseph-dougal.medium.com/flask-ajax-bootstrap-tables-9036410cbc8  
 
+https://github.com/chrisguest75/bootstrap
+
+https://pikock.github.io/bootstrap-magic/app/index.html#!/editor
+https://getbootstrap.com/docs/4.4/getting-started/introduction/
+
+
