@@ -9,15 +9,34 @@ $(document).ready(function() {
       contentType: f_contentType,
       dataType: 'json',
       data: f_data,
-      success: function(data) {
-        var jsonResult = JSON.stringify(data);
-        $("#results").val(unescape(jsonResult));
 
-        
+      success: function(data){
+        console.log('Success Hit');
+        console.log(data);
+        $('#numbers').html('');
+
+        var column_data = '<thead><tr><th scope="col">#</th><th scope="col">Number</th></tr></thead>';
+
+        $('#numbers').append(column_data);
+
+        var row_data = '';
+        var term = 0; 
+        for (var arr in data){      
+            row_data += '<tr>';
+            row_data += '<th>' + term + '</th>';
+            row_data += '<td>' + data[arr] + '</td>';
+            row_data += '</tr>'
+            term+=1;
+        };
+        $('#numbers').append(row_data);
+
+        },
+    error: function(data){
+        console.log('Error Hit');
+        console.log(data);
+        }
 
 
-
-      }
     });
   }
 

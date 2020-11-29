@@ -12,10 +12,6 @@ app.add_api('swagger.yaml')
 
 @app.route("/")
 def home():
-    return render_template("home.html")
-
-@app.route("/fibonacci")
-def fibonacci():
     return render_template("fibonacci.html")
 
 if __name__ == '__main__':

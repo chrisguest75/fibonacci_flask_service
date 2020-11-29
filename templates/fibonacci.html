@@ -30,7 +30,7 @@
                 <div class="controls">
                   <div class="entry input-group form-group">
                     <label for="numberofterms" class="control-label">#Terms</label>
-                    <input class="form-control" name="terms" placeholder="10" type="text">
+                    <input class="form-control" name="terms" placeholder="10" value="10" type="text">
                     <span class="input-group-btn">
                       <button type="button" class="btn btn-default" id="sendQueryString">Generate</button>
                     </span>
@@ -39,19 +39,8 @@
               </div>
           </form>    
 
-        <table class="table table-striped table-dark">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Number</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>1</td>
-              </tr>
-            </tbody>
+        <table id="numbers" class="table table-striped table-dark">
+
           </table>        
     </div>
 
