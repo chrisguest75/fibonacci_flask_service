@@ -15,7 +15,7 @@ def fibonacci():
         yield value
         previous = [previous[1], value]
 
-def generate(terms):
+def generate(terms) -> list:
     '''
     Given number of terms generate a sequence of fibonacci numbers. 
     '''
@@ -28,7 +28,7 @@ def generate(terms):
     for i in fibonacci():
         numbers.append(i)
         count += 1
-        if count > terms:
+        if count >= terms:
             break
 
     return numbers
