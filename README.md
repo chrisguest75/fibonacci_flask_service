@@ -21,17 +21,5 @@ http://localhost:5000/
 http://localhost:5000/api/ui/
 
 ## Research
-https://github.com/zalando/connexion  
-https://realpython.com/flask-connexion-rest-api/  
-
-https://help.parsehub.com/hc/en-us/articles/217751808-API-Tutorial-How-to-get-run-data-using-Python-Flask  
-
-https://joseph-dougal.medium.com/flask-ajax-bootstrap-tables-9036410cbc8  
-
-https://github.com/chrisguest75/bootstrap
-
-https://pikock.github.io/bootstrap-magic/app/index.html#!/editor
-https://getbootstrap.com/docs/4.4/getting-started/introduction/
-
-
-https://embed.plnkr.co/plunk/MNehl5
+[Swagger](https://github.com/zalando/connexion)  
+[Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)  
