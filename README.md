@@ -3,7 +3,9 @@
 ## Prerequisites
 
 [Pyenv](https://github.com/pyenv/pyenv)  
-[Intro to Pyenv](https://realpython.com/intro-to-pyenv/)
+  
+[Intro to Pyenv](https://realpython.com/intro-to-pyenv/)  
+  
 [Pipenv](https://realpython.com/pipenv-guide/)
 
 ## Installation
