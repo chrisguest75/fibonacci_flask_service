@@ -29,15 +29,16 @@ Start the Flask App
 python ./main.py
 ```
 
-## Web
+## Endpoints
 
 ```sh
+## Homepage
 open http://localhost:5000/
-```
+
+## Metrics
+open http://localhost:5000/metrics
 
 ## Swagger API UI
-
-```sh
 open http://localhost:5000/api/ui/
 ```
 
@@ -50,6 +51,20 @@ code .
 
 In Code select the Python Interpreter to be the local .venv one.
 Now you should be able to run the tests inside Code.
+
+## Docker compose
+
+Prometheus and Grafana code copied from my other [repo](https://github.com/chrisguest75/prometheus_examples)
+
+```sh
+docker-compose up --build
+
+# user:admin pwd:admin then skip
+open http://localhost:3000
+
+# Check scrape configuration
+open http://localhost:9090
+```
 
 ## Research
 
