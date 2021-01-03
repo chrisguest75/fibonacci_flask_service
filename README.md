@@ -1,12 +1,10 @@
 # README
 Quick little example flask service that generates fibonacci numbers into a webpage.
 ## Prerequisites
-Configure the following tools
-[Pyenv](https://github.com/pyenv/pyenv)  
-  
-[Intro to Pyenv](https://realpython.com/intro-to-pyenv/)  
-  
-[Pipenv](https://realpython.com/pipenv-guide/)
+Configure the following tools:   
+1) [Pyenv](https://github.com/pyenv/pyenv)  
+1) [Intro to Pyenv](https://realpython.com/intro-to-pyenv/)  
+1) [Pipenv](https://realpython.com/pipenv-guide/)  
 
 ## Installation
 To install the service locally.
