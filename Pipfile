@@ -8,6 +8,9 @@ flask = "*"
 pylint = "*"
 connexion = {extras = ["swagger-ui"], version = "*"}
 prometheus-flask-exporter = "*"
+ptvsd = "*"
+python-json-logger = "*"
+flask-injector = "*"
 
 [dev-packages]
 pytest = "*"
