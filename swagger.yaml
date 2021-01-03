@@ -1,8 +1,8 @@
 swagger: "2.0"
 info:
-  description: "Test swagger service"
+  title: "Fibonacci swagger service"
+  description: "Offers functionality regarding the Fibonacci sequence"
   version: "1.0.0"
-  title: Swagger REST Article
 
 consumes:
   - "application/json"
@@ -21,7 +21,7 @@ paths:
           description: Number of terms to generate.
           in: query
           type: "integer"
-          required: true      
+          required: true
       tags:
         - "numbers"
       summary: ""

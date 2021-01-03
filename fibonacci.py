@@ -2,11 +2,12 @@
 Fibonacci endpoint handler (defined in swagger.yaml) 
 '''
 
+
 def fibonacci():
     '''
     Fibonacci sequence generator
     '''
-    previous = [1, 1]
+    previous = (1, 1)
     yield previous[0]
     yield previous[1]
 
@@ -15,7 +16,8 @@ def fibonacci():
         yield value
         previous = [previous[1], value]
 
-def generate(terms) -> list:
+
+def generate(terms: int) -> list:
     '''
     Given number of terms generate a sequence of fibonacci numbers. 
     '''
@@ -32,5 +34,3 @@ def generate(terms) -> list:
             break
 
     return numbers
-    
-
