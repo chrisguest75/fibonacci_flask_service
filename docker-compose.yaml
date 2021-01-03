@@ -1,0 +1,42 @@
+version: "3.7"
+services:
+  fibonacci:
+    build: ./
+    environment:
+      PORT: 5000
+    ports:
+      - 5000:5000
+    networks:
+      - overlay
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - "prometheus-data-volume:/prometheus"
+      - "./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
+      - "./prometheus/custom-targets.json:/etc/prometheus/custom-targets.json"
+    deploy:
+      restart_policy:
+        condition: on-failure
+    networks:
+      - overlay
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+    deploy:
+      restart_policy:
+        condition: on-failure
+    networks:
+      - overlay
+
+networks:
+  overlay:
+
+volumes:
+  prometheus-data-volume:

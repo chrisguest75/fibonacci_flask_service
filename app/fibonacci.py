@@ -2,6 +2,8 @@
 Fibonacci endpoint handler (defined in swagger.yaml) 
 '''
 
+from app import metrics
+
 
 def fibonacci():
     '''
@@ -17,6 +19,9 @@ def fibonacci():
         previous = [previous[1], value]
 
 
+@metrics.summary('generate_by_status', 'generate Request latencies by status', labels={
+    'code': lambda r: r.status_code
+})
 def generate(terms: int) -> list:
     '''
     Given number of terms generate a sequence of fibonacci numbers. 
