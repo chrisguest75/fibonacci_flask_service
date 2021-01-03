@@ -15,7 +15,7 @@ basePath: "/api"
 paths:
   /fibonacci:
     get:
-      operationId: "fibonacci.generate"
+      operationId: "app.fibonacci.generate"
       parameters:
         - name: terms
           description: Number of terms to generate.
