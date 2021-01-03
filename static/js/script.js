@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+  $("#ajaxForm").keypress(function(e) {
+    //Enter key
+    if (e.which == 13) {
+      return false;
+    }
+  });
+
   function ajaxCallRequest(f_method, f_url, f_data) {
     //$("#dataSent").val(unescape(f_data));
     var f_contentType = 'application/x-www-form-urlencoded; charset=UTF-8';
@@ -11,8 +18,8 @@ $(document).ready(function() {
       data: f_data,
 
       success: function(data){
-        console.log('Success Hit');
-        console.log(data);
+        //console.log('Success Hit');
+        //console.log(data);
         $('#numbers').html('');
 
         var column_data = '<thead><tr><th scope="col">#</th><th scope="col">Number</th></tr></thead>';
@@ -32,7 +39,7 @@ $(document).ready(function() {
 
         },
     error: function(data){
-        console.log('Error Hit');
+        //console.log('Error');
         console.log(data);
         }
 
@@ -46,7 +53,7 @@ $(document).ready(function() {
     var method = form.attr('method');
     var url = form.attr('action') + 'fibonacci';
     var data = $(form).serialize();
-    console.log(data);
+    //console.log(data);
     ajaxCallRequest(method, url, data);
   });
 });
