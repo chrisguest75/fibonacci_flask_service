@@ -66,6 +66,16 @@ open http://localhost:3000
 open http://localhost:9090
 ```
 
+## Load test
+
+```sh
+# install artillery
+npm install -g artillery
+
+# run artillery trests
+artillery run ./tests/artillery/generate.yml
+```
+
 ## Research
 
 [Swagger](https://swagger.io/docs/specification/2-0/basic-structure/)  
